@@ -1,18 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio 2026</title>
+    <meta name="description" content="Portfolio de Mey, étudiante en Master Cultures et Métiers du Web.">
+
+    <title>Portfolio 2026 | Mey K</title>
+
+    <!-- AJOUTER un favicon -->
+    <link rel="icon" type="image/png" href="media/favicon.png">
+
+    <link href="style.css" rel="stylesheet">
 </head>
+
+
 <body>
-    <h1></h1>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
+<header>
+    <nav>     <!-- mettre la navigation plutot collée à droite 
+                deux blocs le logo tout à gauche la navigation et les bouton langues et theme plutot à droite -->
+        <div class="container">
+            <div class="logo">MEY K</div>
+            <ul>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact-titre">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="fr-button" class="active" aria-pressed="true">FR</button>
+                <button id="en-button" aria-pressed="false">EN</button>
+                <button id="theme-button">🌙</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <main>
+
+        <!-- jaime pas cette partie  main
+         j'aimerais mettre mon cv à droite et donner la possibilité de cliquer dessus 
+         pour l'agrandir pour l'ouvrir en grand sur la page sans ouvrir un nouvel onglet ou ouvrir une nouvelle page
+         en gros deux bloc à gauche les ecritures et les boutons à droite le cv sur lequel appuyer pour l'agrandir -->
+    
+            <section id="home" class="home">
+        <div class="container home">
+            <div class="home-content">
+                <h1>Mey K</h1>
+                <p class="tagline">Étudiante en Master Cultures et Métiers du Web</p>
+                <p>Communication • Audiovisuel • UX/UI • Développement Web</p>
+                <div class="cta-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+
+                  <!-- ici ce sera mon cv -->
+
+            <div class="home-cv">
+                <div class="home-cv-wrapper">
+                    <div class="home-cv-placeholder">?</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+        <!-- ici mettre mes projets dans des boites -->
+        <!-- pareil que pour le cv en haut : 
+           donner la possibilité de cliquer dessus 
+         pour l'agrandir les images des projets pour les ouvrir en grand sur la page sans ouvrir un nouvel onglet ou ouvrir une nouvelle page -->
+
+        <section class="projects" >
+        <div class="container">
+            <h2 class="section-title" id="projets">Mes <span>projets</span></h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-visual">🎨</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Projet 1</h3>
+                        <p class="project-description">décrire le projet</p>
+                        <div class="project-tags">
+                            <span class="tag">tag matiere</span>
+                            <span class="tag">tag thème</span>
+                            <span class="tag">tag sujet</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card reveal">
+                    <div class="project-visual">💻</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Projet 2</h3>
+                        <p class="project-description">décrire le projet</p>
+                        <div class="project-tags">
+                            <span class="tag">tag matiere</span>
+                            <span class="tag">tag thème</span>
+                            <span class="tag">tag sujet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-visual">🎬</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Projet 3</h3>
+                        <p class="project-description">décrire le projet</p>
+                        <div class="project-tags">
+                            <span class="tag">tag matiere</span>
+                            <span class="tag">tag thème</span>
+                            <span class="tag">tag sujet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+ <!-- nouveau bloc du one pager dédié au contact 
+  un bouton voir mon cv qui cette fois ouvre le cv dans un nouvel onglet (permet de telechager en gros) 
+  bouton pour ouvrir une page de mail-->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title" id="contact-titre">Contact</h2>
+                <p>Je serais ravi d'échanger avec vous ! Consultez mon CV et contactez moi par email .</p>
+                <div class="contact-buttons">
+                    <!-- mettre mon cv en pdf-->
+                    <a href="media/#" target="_blank" class="btn btn-secondary">Voir mon CV</a>
+                    <a href="mailto:mey.k@hotmail.com" target="_blank" class="btn btn-primary">Me contacter par email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mey-k/" target="_blank" title="LinkedIn"> Linkedin</a>
+                <p> | </p>
+                <a href="https://github.com/9-mmey" target="_blank" title="GitHub"> GitHub</a>
+            </div>
+            <p>&copy; 2026 Portfolio | Mey K . Tous droits réservés.</p>
+        </div>
+
+        <!-- rédigez les mentions legales-->
+        <a href="mentionslegales.html">Mentions légales</a>
+    </footer>
+
+    <!-- le script est placé ici, juste avant la fin du body :
+         à ce moment le HTML est déjà chargé donc getElementById
+         trouve bien les boutons (contrairement à quand le script
+         était dans le head) -->
+    <script src="script.js"></script>
 </body>
 </html>
