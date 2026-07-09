@@ -6,19 +6,23 @@
     <meta name="description" content="Portfolio de Mey, étudiante en Master Cultures et Métiers du Web.">
 
     <title>Portfolio 2026 | Mey Ksantini</title>
-    <!-- AJOUTER favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link href="css/style.css" rel="stylesheet">
+
+    <!-- AJOUTER un favicon -->
+    <link rel="icon" type="image/png" href="media/favicon.png">
+
+    <link href="style.css" rel="stylesheet">
 </head>
-<script src="js/script.js"></script>
+
+
 <body>
-    <nav>
+<header>
+    <nav>     <!-- mettre la navigation plutot collée à droite 
+                deux blocs le logo tout à gauche la navigation et les bouton langues et theme plutot à droite -->
         <div class="container">
-            <div class="logo">MEY KSANTINI</div>
+            <div class="logo"><a href="index.html">MEY KSANTINI</a></div>
             <ul>
                 <li><a href="#projets">Projets</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-titre">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -28,15 +32,15 @@
             </div>
         </div>
     </nav>
-    <h1></h1>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
-    <h2></h2>
+</header>
 
+    <main>
+        <section>
+                <div class="container">
+            <h2 class="section-title" id="legalnotices">Mentions légales</h2>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -48,7 +52,14 @@
             <p>&copy; 2026 Portfolio | Mey Ksantini . Tous droits réservés.</p>
         </div>
 
-        <a href="mentions-legales.html">Mentions légales</a>
-    </footer>  
+        <!-- rédigez les mentions legales-->
+        <a href="mentionslegales.html">Mentions légales</a>
+    </footer>
+
+    <!-- le script est placé ici, juste avant la fin du body :
+         à ce moment le HTML est déjà chargé donc getElementById
+         trouve bien les boutons (contrairement à quand le script
+         était dans le head) -->
+    <script src="script.js"></script>
 </body>
 </html>
